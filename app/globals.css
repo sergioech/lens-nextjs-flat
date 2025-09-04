@@ -3,24 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: #4A25A9;
-  --color-secondary: #00F0FF;
-  --color-accent: #FF4DAB;
-  --color-bg: #F5F5F8;
-  --color-foreground: #0F172A;
-  --color-text-secondary: #475569;
+  --background: #ffffff;
+  --foreground: #0f172a;
 }
 
 body {
-  color: var(--color-foreground);
-  background: var(--color-bg);
+  color: var(--foreground);
+  background: var(--background);
   font-family: 'Inter', sans-serif;
-}
-
-a {
-  transition: all 0.3s ease;
-}
-
-button {
-  transition: all 0.3s ease;
 }
