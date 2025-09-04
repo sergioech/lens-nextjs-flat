@@ -7,7 +7,7 @@ export default function Home() {
       <section className="bg-gradient-to-r from-[#4A25A9] to-[#00F0FF] text-white py-28 text-center relative overflow-hidden">
         <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-wide">Consultoría potenciada con AI</h1>
         <p className="text-xl md:text-2xl mb-8 text-white/90">
-          LENS integra estrategia, analytics y capacidades de inteligencia artificial
+          LENS integra mucha estrategia, analytics y capacidades de inteligencia artificial
           para que las organizaciones tomen mejores decisiones y generen impacto real.
         </p>
         <a
