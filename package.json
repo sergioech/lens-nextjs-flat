@@ -11,8 +11,7 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "lucide-react": "latest",
-    "react-icons": "latest"
+    "lucide-react": "latest"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "latest",
