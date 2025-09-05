@@ -1,31 +1,33 @@
-import "./globals.css";
+import './globals.css'
 
 export const metadata = {
-  title: "LENS",
-  description: "Decisiones más precisas con AI, estrategia y analytics",
-};
+  title: 'LENS | AI, Estrategia y Analytics',
+  description: 'Consultoría moderna que integra estrategia, AI y analytics para generar impacto real',
+}
 
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body>
-        <header className="flex items-center justify-between px-8 py-4 bg-white shadow">
-          <div className="text-xl font-bold text-blue-600">LENS</div>
-          <nav className="flex gap-8">
-            <a href="#" className="text-gray-700 hover:text-blue-600">Expertise</a>
-            <a href="#" className="text-gray-700 hover:text-blue-600">Industrias</a>
-            <a href="#" className="text-gray-700 hover:text-blue-600">Resultados</a>
-            <a href="#" className="text-gray-700 hover:text-blue-600">Contacto</a>
-          </nav>
-          <a
-            href="#"
-            className="bg-gradient-to-r from-pink-500 to-orange-500 text-white px-4 py-2 rounded-full shadow hover:opacity-90 transition"
-          >
-            Agenda demo
-          </a>
+        <header className="header">
+          <div className="container header-inner">
+            <div className="text-2xl font-extrabold text-[var(--accent-cyan)]">LENS</div>
+
+            <nav className="hidden md:flex gap-8 nav-links">
+              <a href="#expertise">Expertise</a>
+              <a href="#industrias">Industrias</a>
+              <a href="#impacto">Resultados</a>
+              <a href="#contacto">Contacto</a>
+            </nav>
+
+            <a href="#contacto" className="cta-btn">Agenda demo</a>
+          </div>
         </header>
-        <main className="max-w-7xl mx-auto">{children}</main>
+
+        <main className="container">
+          {children}
+        </main>
       </body>
     </html>
-  );
+  )
 }
