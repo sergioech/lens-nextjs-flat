@@ -1,4 +1,4 @@
-import { Brain, LineChart, Activity, Database, Lightbulb, Rocket, DeviceMobile, Cog, ChartBar, MapPin, ShieldCheck, ShoppingBag } from 'lucide-react'
+import { Brain, LineChart, Activity, Database, Lightbulb, Rocket, DeviceMobileIcon, Cog, ChartBar, MapPin, ShieldCheck, ShoppingBag } from 'lucide-react'
 
 export default function Home() {
   return (
