@@ -1,62 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Variables (ajusta si quieres) */
-:root{
-  --accent-cyan: #06b6d4;
-  --accent-pink: #f472b6;
-  --accent-orange: #fb923c;
-  --card-bg: #ffffff;
-  --muted: #6b7280;
-}
-
-/* Base */
-html,body,#__next { height: 100% }
+/* Estilos personalizados */
 body {
-  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-  background: #f8fafc;
-  color: #0f172a;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+  @apply bg-gray-50 text-gray-900;
 }
 
-/* Small helpers */
-.container-max {
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.navbar {
+  @apply flex items-center justify-between px-8 py-4 bg-white shadow;
 }
 
-/* Card icon holder */
+.nav-links {
+  @apply flex gap-8;
+}
+
+.nav-links a {
+  @apply text-gray-700 hover:text-blue-600 font-medium transition;
+}
+
+.cta-btn {
+  @apply bg-gradient-to-r from-pink-500 to-orange-500 text-white px-4 py-2 rounded-full shadow hover:opacity-90 transition;
+}
+
+.section-title {
+  @apply text-2xl font-bold text-center mt-12 mb-6;
+}
+
+.cards-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-8;
+}
+
+.card {
+  @apply bg-white rounded-2xl shadow p-5 border-0 border-t-4 transition hover:shadow-lg;
+}
+
+.card-title {
+  @apply text-lg font-semibold mb-1;
+}
+
+.card-sub {
+  @apply text-sm text-gray-600;
+}
+
 .card-icon {
-  width: 44px;
-  height: 44px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-}
-
-/* Make the top accent border rounded a bit (visual) */
-.card-top {
-  border-top-width: 4px;
-  border-top-left-radius: 0.75rem;
-  border-top-right-radius: 0.75rem;
-}
-
-/* Tiny shadow style */
-.card-shadow {
-  box-shadow: 0 6px 18px rgba(15,23,42,0.06);
-}
-
-/* Responsive tweaks for smaller screens (cards more compact) */
-@media (max-width: 768px) {
-  .card-icon { width: 36px; height: 36px; }
-  .card-title { font-size: 1rem; }
-  .card-sub { font-size: 0.85rem; }
+  @apply w-10 h-10 flex items-center justify-center rounded-full mb-3;
 }
