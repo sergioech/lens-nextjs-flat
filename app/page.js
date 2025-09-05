@@ -1,52 +1,143 @@
-import { Brain, LineChart, Activity, Database, Lightbulb, Rocket, MonitorSmartphone, Workflow, BarChart4, MapPin, ShieldCheck, ShoppingBag } from "lucide-react";
+import { Brain, LineChart, Activity, Database, Lightbulb, Rocket, DeviceMobile, Cog, ChartBar, MapPin, ShieldCheck, ShoppingBag } from 'lucide-react'
 
 export default function Home() {
   return (
-    <div className="py-12 px-6">
-      {/* AI & Analytics */}
-      <h2 className="text-2xl font-bold text-center mb-8">AI & Analytics</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-        <Card icon={<Brain />} color="cyan" title="AI & Machine Learning" desc="Soluciones en AI & machine learning." />
-        <Card icon={<LineChart />} color="cyan" title="Analytics Avanzado" desc="Soluciones en analytics avanzado." />
-        <Card icon={<Activity />} color="cyan" title="Modelos Predictivos" desc="Soluciones en modelos predictivos." />
-        <Card icon={<Database />} color="cyan" title="Data Platforms" desc="Soluciones en plataformas de datos." />
-      </div>
+    <div>
+      {/* spacer for sticky header */}
+      <div style={{ height: 8 }} />
 
-      {/* Estrategia & Crecimiento */}
-      <h2 className="text-2xl font-bold text-center mb-8">Estrategia & Crecimiento</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-        <Card icon={<Lightbulb />} color="pink" title="Estrategia de Negocio" desc="Expertise en estrategia de negocio." />
-        <Card icon={<Rocket />} color="pink" title="Crecimiento & Go-to-Market" desc="Expertise en crecimiento & go-to-market." />
-        <Card icon={<MonitorSmartphone />} color="pink" title="Transformación Digital" desc="Expertise en transformación digital." />
-        <Card icon={<Workflow />} color="pink" title="Organización & Operaciones" desc="Expertise en organización & operaciones." />
-      </div>
+      {/* HERO */}
+      <section className="hero">
+        <div className="container">
+          <h1>Decisiones más precisas con AI, Estrategia y Analytics</h1>
+          <p>LENS combina consultoría estratégica, inteligencia artificial y smart analytics para entregar soluciones accionables que impulsan resultados reales.</p>
+          <div style={{ marginTop: 20 }}>
+            <a href="#contacto" className="cta-btn">Agenda una demo</a>
+          </div>
+        </div>
+      </section>
 
-      {/* Riesgo & Optimización */}
-      <h2 className="text-2xl font-bold text-center mb-8">Riesgo & Optimización</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <Card icon={<BarChart4 />} color="orange" title="Pricing & Elasticidades" desc="Soluciones en pricing & elasticidades." />
-        <Card icon={<MapPin />} color="orange" title="Optimización de Ubicaciones" desc="Soluciones en optimización de ubicaciones." />
-        <Card icon={<ShieldCheck />} color="orange" title="Riesgo Crediticio" desc="Soluciones en riesgo crediticio." />
-        <Card icon={<ShoppingBag />} color="orange" title="Retail & Consumo Inteligente" desc="Soluciones en retail & consumo inteligente." />
-      </div>
+      {/* EXPERTISE */}
+      <section id="expertise" style={{ paddingTop: 40, paddingBottom: 40 }}>
+        <h2 className="text-2xl font-bold text-center mb-8">Áreas de Expertise</h2>
+
+        <div className="grid-cards">
+          <article className="card card-cyan">
+            <div className="icon"><Brain size={20} /></div>
+            <div className="ml-3">
+              <h3 className="card-title">AI & Machine Learning</h3>
+              <p className="card-sub">Copilotos, predicción y modelos avanzados.</p>
+            </div>
+          </article>
+
+          <article className="card card-cyan">
+            <div className="icon"><LineChart size={20} /></div>
+            <div className="ml-3">
+              <h3 className="card-title">Analytics Avanzado</h3>
+              <p className="card-sub">Visualización y segmentación accionable.</p>
+            </div>
+          </article>
+
+          <article className="card card-cyan">
+            <div className="icon"><Activity size={20} /></div>
+            <div className="ml-3">
+              <h3 className="card-title">Modelos Predictivos</h3>
+              <p className="card-sub">Scoring y forecasting robusto.</p>
+            </div>
+          </article>
+
+          <article className="card card-cyan">
+            <div className="icon"><Database size={20} /></div>
+            <div className="ml-3">
+              <h3 className="card-title">Data Platforms</h3>
+              <p className="card-sub">Pipelines y gestión de datos confiables.</p>
+            </div>
+          </article>
+        </div>
+
+        {/* second row: estrategia */}
+        <div style={{ height: 26 }} />
+
+        <div className="grid-cards">
+          <article className="card card-pink">
+            <div className="icon"><Lightbulb size={20} /></div>
+            <div className="ml-3">
+              <h3 className="card-title">Estrategia de Negocio</h3>
+              <p className="card-sub">Roadmaps y modelos de negocio.</p>
+            </div>
+          </article>
+
+          <article className="card card-pink">
+            <div className="icon"><Rocket size={20} /></div>
+            <div className="ml-3">
+              <h3 className="card-title">Crecimiento & GTM</h3>
+              <p className="card-sub">Experimentación y go-to-market.</p>
+            </div>
+          </article>
+
+          <article className="card card-pink">
+            <div className="icon"><DeviceMobile size={20} /></div>
+            <div className="ml-3">
+              <h3 className="card-title">Transformación Digital</h3>
+              <p className="card-sub">Modernización de experiencia y tech.</p>
+            </div>
+          </article>
+
+          <article className="card card-pink">
+            <div className="icon"><Cog size={20} /></div>
+            <div className="ml-3">
+              <h3 className="card-title">Organización & Operaciones</h3>
+              <p className="card-sub">Optimización de procesos y organización.</p>
+            </div>
+          </article>
+        </div>
+
+        {/* third row: riesgo */}
+        <div style={{ height: 26 }} />
+
+        <div className="grid-cards">
+          <article className="card card-orange">
+            <div className="icon"><ChartBar size={20} /></div>
+            <div className="ml-3">
+              <h3 className="card-title">Pricing & Elasticidades</h3>
+              <p className="card-sub">Estrategias de pricing basadas en data.</p>
+            </div>
+          </article>
+
+          <article className="card card-orange">
+            <div className="icon"><MapPin size={20} /></div>
+            <div className="ml-3">
+              <h3 className="card-title">Optimización de Ubicaciones</h3>
+              <p className="card-sub">Decisiones de ubicación impulsadas por modelos.</p>
+            </div>
+          </article>
+
+          <article className="card card-orange">
+            <div className="icon"><ShieldCheck size={20} /></div>
+            <div className="ml-3">
+              <h3 className="card-title">Riesgo Crediticio</h3>
+              <p className="card-sub">Scoring y mitigación de riesgo.</p>
+            </div>
+          </article>
+
+          <article className="card card-orange">
+            <div className="icon"><ShoppingBag size={20} /></div>
+            <div className="ml-3">
+              <h3 className="card-title">Retail & Consumo Inteligente</h3>
+              <p className="card-sub">Experiencias y optimización de retail.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      {/* CTA final */}
+      <section id="contacto" className="hero" style={{ paddingTop: 28, paddingBottom: 28 }}>
+        <div className="container">
+          <h2 className="text-2xl font-bold mb-2">¿Listo para transformar tu negocio?</h2>
+          <p className="mb-4">Agenda una demo y te mostramos pilotos y casos reales.</p>
+          <a href="mailto:contacto@lens.mx" className="cta-btn">Contáctanos</a>
+        </div>
+      </section>
     </div>
-  );
-}
-
-function Card({ icon, color, title, desc }) {
-  const colors = {
-    cyan: "border-cyan-400 bg-cyan-50 text-cyan-600",
-    pink: "border-pink-400 bg-pink-50 text-pink-600",
-    orange: "border-orange-400 bg-orange-50 text-orange-600",
-  };
-
-  return (
-    <article className="bg-white rounded-2xl shadow p-6 border-t-4">
-      <div className={`w-12 h-12 flex items-center justify-center rounded-full mb-4 ${colors[color]}`}>
-        {icon}
-      </div>
-      <h3 className="text-lg font-semibold mb-2">{title}</h3>
-      <p className="text-sm text-gray-600">{desc}</p>
-    </article>
-  );
+  )
 }
