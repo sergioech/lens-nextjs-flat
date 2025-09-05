@@ -1,4 +1,4 @@
-import { Brain, LineChart, Activity, Database, Lightbulb, Rocket, DeviceMobileIcon, Cog, ChartBar, MapPin, ShieldCheck, ShoppingBag } from 'lucide-react'
+import { Brain, LineChart, Activity, Database, Lightbulb, Rocket, DeviceMobile, Cog, ChartBar, MapPin, ShieldCheck, ShoppingBag } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -76,7 +76,7 @@ export default function Home() {
           </article>
 
           <article className="card card-pink">
-            <div className="icon"><DeviceMobileIcon size={20} /></div>
+            <div className="icon"><DeviceMobile size={20} /></div>
             <div className="ml-3">
               <h3 className="card-title">Transformación Digital</h3>
               <p className="card-sub">Modernización de experiencia y tech.</p>
